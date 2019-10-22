@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*Bootstrap 3*/
+.col-md-offset-6 {
+    margin-left: 50%;
+ }
+/*Bootstrap 3*/
+.zigzag-text-bg-1 {
+	background: url(img/love.jpg);
+	border-bottom: gold solid 10px;
+}
+.zigzag-text-bg-2{
+	background: url(img/ma.jpg);
+}
+.section-padding {
+  background-size: cover;
+  background-position: center;
+}
+.zigzag-text {
+  position: relative;
+  z-index: 2;
+  padding-right: 30px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.zigzag-text::after {
+	position: absolute;
+	left: -4900%;
+	top: 0;
+	height: 100%;
+	width: 5000%;
+	content: "";
+	background: #19a15f;
+	z-index: -1;
+	transform: skew(10deg);
+	opacity: .8;
+}
+.boxed-btn {
+	background: #3333AC;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 30px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+.zigzag-text-bg-2 .zigzag-text::after {
+	left: auto;
+	right: -4900%;
+}
+.zigzag-text-bg-2 .zigzag-text {
+	padding-left: 50px;
+	padding-right: 0;
+}
